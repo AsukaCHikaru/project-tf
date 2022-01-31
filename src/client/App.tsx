@@ -1,7 +1,15 @@
 import React from "react";
+import { Board } from "./components/Board";
+import { Layout } from "./components/Layout";
 
 const App: React.VFC = () => {
-  return <div className="bg-red-500">hello world</div>;
+  return (
+    <div className="w-full h-full">
+      <Layout>
+        <Board />
+      </Layout>
+    </div>
+  );
 };
 
 export default App;
